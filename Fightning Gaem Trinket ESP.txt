@@ -1,0 +1,19 @@
+while true do
+	task.wait()
+	local Trinkets = game.Workspace.Folder:GetChildren()
+	for i,v in pairs(Trinkets) do
+		if not v:FindFirstChild("UwU") then
+			local UwU = Instance.new("BillboardGui", v)
+			UwU.Name = "UwU"
+			UwU.Size = UDim2.new(2.5,0,2.5,0)
+			UwU.AlwaysOnTop = true
+		
+			local ESPMain = Instance.new("Frame", UwU)
+			ESPMain.BackgroundColor3 = Color3.fromRGB(255, 0, 17)
+			ESPMain.BackgroundTransparency = 0.75
+			ESPMain.Size = UDim2.new(2.5,0,2.5,0)
+			ESPMain.BorderSizePixel = 0	
+		end
+	end
+end
+
